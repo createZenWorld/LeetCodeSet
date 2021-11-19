@@ -23,6 +23,11 @@
  * Constraints:
  *
  * 0 <= x, y <= 231 - 1
+ *
+ * 思路解析：
+ * 首先要清楚韩明距离的意思，它表示两个（相同长度）字对应位不同的数量
+ * 那么就可以利用异或的特点，不同的位异或位1，相同的位异或位1，那么就可以
+ * 通过异或出来的数，求其中1的个数获取汉明距离
  */
 public class E_461_Hamming_Distance {
     public int hammingDistance(int x, int y) {
